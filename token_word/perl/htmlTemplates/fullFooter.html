@@ -1,0 +1,270 @@
+
+</TD></TR>
+</TABLE>
+
+
+</TD>
+
+
+<!-- Sidebar goes here -->
+
+
+<TD VALIGN=TOP WIDTH=25%>
+<BR>
+
+<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=2>
+
+<TR>
+<TD BGCOLOR=#000000><FONT COLOR=#FFFFFF>logged in as <B><!--#USER--></B></TD>
+</TR>
+
+<TR>
+<TD BGCOLOR=#EEEEEE NOWRAP>
+
+
+-<A HREF="tokenWord.pl?action=showQuoteList">quote clipboard</A><BR>
+
+-<A HREF="tokenWord.pl?action=createDocumentForm">create document</A><BR>
+
+-<A HREF="tokenWord.pl?action=feedbackForm">feedback</A><BR>
+
+-<A HREF="tokenWord.pl?action=logout">logout</A>
+
+
+
+<CENTER>
+<HR WIDTH=50%>
+</CENTER>
+<FORM ACTION="tokenWord.pl">
+
+<INPUT TYPE="hidden" NAME="action" VALUE="search">
+
+<CENTER>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+
+
+<TR>
+<TD><INPUT TYPE="text" MAXLENGTH=256 SIZE=20 NAME="terms" VALUE=""></TD>
+</TR>
+
+<TR>
+<TD ALIGN=RIGHT><INPUT TYPE=submit VALUE="search"></TD>
+</TR>
+
+</TABLE>
+</CENTER>
+
+</FORM>
+
+
+
+<!--
+<CENTER>
+<HR WIDTH=50%>
+</CENTER>
+show document:
+<FORM ACTION="tokenWord.pl">
+
+<INPUT TYPE="hidden" NAME="action" VALUE="showDocument">
+
+<CENTER>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+
+<TR>
+<TD>user:</TD>
+<TD><INPUT TYPE="text" MAXLENGTH=256 SIZE=8 NAME="docOwner" VALUE=""></TD>
+</TR>
+
+<TR>
+<TD>docID:</TD>
+<TD><INPUT TYPE="text" MAXLENGTH=256 SIZE=8 NAME="docID" VALUE=""></TD>
+</TR>
+
+<TR>
+<TD></TD><TD ALIGN=RIGHT><INPUT TYPE=submit VALUE="show"></TD>
+</TR>
+
+</TABLE>
+</CENTER>
+</FORM>
+-->
+
+
+<CENTER>
+<HR WIDTH=50%>
+</CENTER>
+
+<TABLE BORDER=0>
+
+<TR><TD ALIGN=LEFT>
+token balance:
+</TD></TR>
+<TR><TD ALIGN=RIGHT>
+<FONT COLOR="#008F00"><!--#TOKEN_BALANCE--></FONT><BR>
+</TD></TR>
+
+<TR><TD ALIGN=LEFT>
+trial token balance:
+</TD></TR>
+<TR><TD ALIGN=RIGHT>
+<FONT COLOR="#008F00"><!--#TRIAL_TOKEN_BALANCE--></FONT><BR>
+</TD></TR>
+
+</TABLE>
+
+<CENTER>
+<HR WIDTH=50%>
+</CENTER>
+
+<!-- token deposit form -->
+<FORM ACTION="tokenWord.pl">
+
+<INPUT TYPE="hidden" NAME="action" VALUE="deposit">
+
+<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=0>
+
+<TR>
+<TD>
+deposit <INPUT TYPE="text" MAXLENGTH=256 SIZE=8 NAME="tokenCount" VALUE=""> tokens 
+</TD>
+</TR>
+<TR>
+<TD ALIGN=CENTER>
+<INPUT TYPE=submit VALUE="deposit">
+</TD>
+</TR>
+
+</TABLE>
+</FORM>
+
+<!-- token witdraw form -->
+<FORM ACTION="tokenWord.pl">
+
+<INPUT TYPE="hidden" NAME="action" VALUE="withdraw">
+
+<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=0>
+
+<TR>
+<TD>
+withdraw <INPUT TYPE="text" MAXLENGTH=256 SIZE=8 NAME="tokenCount" VALUE=""> tokens  
+</TD>
+</TR>
+<TR>
+<TD ALIGN=CENTER>
+<INPUT TYPE=submit VALUE="withdraw">
+</TD>
+</TR>
+
+</TABLE>
+</FORM>
+
+
+
+
+</TD>
+</TR>
+
+</TABLE>
+
+
+
+
+<BR>
+
+
+<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=2>
+
+<TR>
+<TD BGCOLOR=#000000><FONT COLOR=#FFFFFF>most quoted documents</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR=#EEEEEE NOWRAP>
+
+<CENTER>
+<!--#MOST_QUOTED_DOCUMENT_LIST-->
+</CENTER>
+
+</TD>
+</TR>
+
+</TABLE>
+
+
+
+
+<BR>
+
+
+<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=2>
+
+<TR>
+<TD BGCOLOR=#000000><FONT COLOR=#FFFFFF>most recent documents</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR=#EEEEEE NOWRAP>
+
+<CENTER>
+<!--#MOST_RECENT_DOCUMENT_LIST-->
+</CENTER>
+
+</TD>
+</TR>
+
+</TABLE>
+
+
+
+
+<BR>
+
+<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=2>
+
+<TR>
+<TD BGCOLOR=#000000><FONT COLOR=#FFFFFF>external links</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR=#EEEEEE NOWRAP>
+
+<CENTER>
+<TABLE BORDER=0>
+
+<TR><TD>
+<A HREF="http://www.sourceforge.net/projects/hypertext">development</A>
+</TD></TR>
+
+<TR><TD>
+<A HREF="http://sourceforge.net/cvs/?group_id=54984">source code</A>
+</TD></TR>
+
+<TR><TD>
+hosted by:<BR>
+<A href="http://sourceforge.net"> 
+<IMG src="http://sourceforge.net/sflogo.php?group_id=54984&type=1" 
+width="88" height="31" border="0" alt="SourceForge Logo"></A>
+</TD></TR>
+
+
+</TABLE>
+</CENTER>
+
+</TD>
+</TR>
+
+
+</TABLE>
+
+
+
+
+
+
+
+
+
+
+
+</TD></TR></TABLE>
+
